@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8af66dfb-9475-4f73-ab99-e3072e3a7d19" name="Changes" comment="init Fairplay" />
+    <list default="true" id="8af66dfb-9475-4f73-ab99-e3072e3a7d19" name="Changes" comment="init Fairplay">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/fairplay/FairPlayBrainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fairplay/FPController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fairplay/FPController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fairplay/FairPlayBrain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fairplay/FairPlayBrain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/fairplay/fairplay-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/fairplay/fairplay-view.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,12 +20,25 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Artyfak"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Artyfak/FairPlay.git",
+    "accountId": "fa6b4b64-03a5-4ce7-b06c-4f0cff8013d8"
+  }
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -40,13 +59,24 @@
   "keyToString": {
     "Application.FairPlay.executor": "Run",
     "Application.mainFP.executor": "Run",
+    "JUnit.FairPlayBrainTest.naplnpole.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.fairplay" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.mainFP">
     <configuration name="mainFP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.fairplay.mainFP" />
       <module name="FairPlay" />
@@ -60,9 +90,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FairPlayBrainTest.naplnpole" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FairPlay" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fairplay.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fairplay" />
+      <option name="MAIN_CLASS_NAME" value="com.fairplay.FairPlayBrainTest" />
+      <option name="METHOD_NAME" value="naplnpole" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.mainFP" />
+        <item itemvalue="JUnit.FairPlayBrainTest.naplnpole" />
       </list>
     </recent_temporary>
   </component>
@@ -83,7 +130,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729079767646</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="init Fairplay">
+      <option name="closed" value="true" />
+      <created>1729080057805</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729080057805</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
