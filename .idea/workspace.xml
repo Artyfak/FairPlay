@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8af66dfb-9475-4f73-ab99-e3072e3a7d19" name="Changes" comment="init Fairplay">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/fairplay/FairPlayBrainTest.java" afterDir="false" />
+    <list default="true" id="8af66dfb-9475-4f73-ab99-e3072e3a7d19" name="Changes" comment="init ošetrenie slova a matica">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/fairplay/FPController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fairplay/FPController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/fairplay/FairPlayBrain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fairplay/FairPlayBrain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/fairplay/fairplay-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/fairplay/fairplay-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,18 +27,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Artyfak"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Artyfak&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Artyfak/FairPlay.git",
-    "accountId": "fa6b4b64-03a5-4ce7-b06c-4f0cff8013d8"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Artyfak/FairPlay.git&quot;,
+    &quot;accountId&quot;: &quot;fa6b4b64-03a5-4ce7-b06c-4f0cff8013d8&quot;
   }
-}]]></component>
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -46,28 +46,28 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2nW6zzhHempV4cla26b9ID0NRaB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.FairPlay.executor": "Run",
-    "Application.mainFP.executor": "Run",
-    "JUnit.FairPlayBrainTest.naplnpole.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.FairPlay.executor&quot;: &quot;Run&quot;,
+    &quot;Application.mainFP.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.FairPlayBrainTest.naplnpole.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -138,11 +138,20 @@
       <option name="project" value="LOCAL" />
       <updated>1729080057805</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="init ošetrenie slova a matica">
+      <option name="closed" value="true" />
+      <created>1729083950177</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1729083950177</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init Fairplay" />
-    <option name="LAST_COMMIT_MESSAGE" value="init Fairplay" />
+    <MESSAGE value="init ošetrenie slova a matica" />
+    <option name="LAST_COMMIT_MESSAGE" value="init ošetrenie slova a matica" />
   </component>
 </project>

@@ -8,11 +8,14 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fairplay.FPController">
    <children>
-      <TextField fx:id="tf_Slovo" layoutX="35.0" layoutY="31.0" onKeyTyped="#handle_slovo" promptText="Slovo na šifrovanie" />
-      <TextField fx:id="TF_siftext" layoutX="35.0" layoutY="72.0" />
+      <TextField fx:id="tf_Slovo" layoutX="25.0" layoutY="27.0" onKeyTyped="#handle_slovo" prefHeight="25.0" prefWidth="113.0" promptText="Slovo na šifrovanie" />
+      <TextField fx:id="TF_siftext" layoutX="150.0" layoutY="27.0" onKeyTyped="#handle_text" prefHeight="25.0" prefWidth="434.0" promptText="Správa ktorú chceme zašifrovať" />
       <Text layoutX="289.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FairPlay" />
-      <Button fx:id="B1" layoutX="203.0" layoutY="31.0" mnemonicParsing="false" text="ZadajSlovo" />
-      <Button fx:id="B2" layoutX="203.0" layoutY="72.0" mnemonicParsing="false" text="Zadaj Šifrovaný Text" />
-      <TextArea fx:id="sifrovacia_tabulka" editable="false" layoutX="35.0" layoutY="116.0" prefHeight="115.0" prefWidth="115.0" />
+      <TextArea fx:id="sifrovacia_tabulka2" editable="false" layoutX="150.0" layoutY="52.0" prefHeight="113.0" prefWidth="434.0" />
+      <TextArea fx:id="sifrovacia_tabulka1" editable="false" layoutX="25.0" layoutY="52.0" prefHeight="113.0" prefWidth="113.0" />
+      <TextArea fx:id="sifrovacia_tabulka3" editable="false" layoutX="150.0" layoutY="165.0" prefHeight="113.0" prefWidth="434.0" />
+      <TextArea fx:id="sifrovacia_tabulka4" editable="false" layoutX="150.0" layoutY="278.0" prefHeight="113.0" prefWidth="434.0" />
+      <Button fx:id="en_cz" layoutX="37.0" layoutY="175.0" mnemonicParsing="false" onAction="#handle_button" text="Zmena EN/CZ" />
+      <TextArea fx:id="ukazatel" layoutX="44.0" layoutY="209.0" prefHeight="25.0" prefWidth="76.0" />
    </children>
 </AnchorPane>
