@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8af66dfb-9475-4f73-ab99-e3072e3a7d19" name="Changes" comment="init ošetrenie slova a matica">
+    <list default="true" id="8af66dfb-9475-4f73-ab99-e3072e3a7d19" name="Changes" comment="final spagetti code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/fairplay/FPController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fairplay/FPController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/fairplay/FairPlayBrain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fairplay/FairPlayBrain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/fairplay/fairplay-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/fairplay/fairplay-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,12 +144,21 @@
       <option name="project" value="LOCAL" />
       <updated>1729083950177</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="final spagetti code">
+      <option name="closed" value="true" />
+      <created>1729545660873</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1729545660873</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init Fairplay" />
     <MESSAGE value="init ošetrenie slova a matica" />
-    <option name="LAST_COMMIT_MESSAGE" value="init ošetrenie slova a matica" />
+    <MESSAGE value="final spagetti code" />
+    <option name="LAST_COMMIT_MESSAGE" value="final spagetti code" />
   </component>
 </project>

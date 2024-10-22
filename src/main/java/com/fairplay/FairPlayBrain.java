@@ -34,7 +34,7 @@ public class FairPlayBrain {
     public void setSlovo(String slovo) {
         this.slovo = slovo;
     }
-
+    //Naplnenie pola tak aby sa neopakoval žiadny znak a vymazanie 22 znmaku teda W
     public void naplnpole_cz(String kluc) {
         boolean[] pouzite = new boolean[26];
         int index = 0;
@@ -66,7 +66,7 @@ public class FairPlayBrain {
 
 
     }
-
+    //Naplnenie pola tak aby sa neopakoval žiadny znak a vymazanie 9 znmaku teda J
     public void naplnpole_en(String kluc) {
         boolean[] pouzite = new boolean[26];
         int index = 0;
@@ -98,16 +98,7 @@ public class FairPlayBrain {
 
 
     }
-
-    public void vypisPole() {
-        for (int i = 0; i < polechar.length; i++) {
-            for (int j = 0; j < polechar[i].length; j++) {
-                System.out.print(polechar[i][j] + " ");
-            }
-            System.out.println();
-        }
-    }
-
+    //Funkcia na vypis pola pre gui
     public String vypispoleR() {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < polechar.length; i++) {
@@ -122,8 +113,6 @@ public class FairPlayBrain {
     public String filtruj_cz(String input) {
 
 
-
-        System.out.println("Input into filtruj(): " + input);
 
         // Normalizer
         input = input.replaceAll("á","A");
@@ -143,8 +132,6 @@ public class FairPlayBrain {
         input = input.replaceAll("ý","Y");
         input = input.replaceAll("ž","Z");
 
-        System.out.println("Input in filtruj() after normalizer: " + input);
-
         // Zmena Cislic
         input = input.replaceAll("\\p{Punct}", "");
         input = input.replaceAll(" ","XMEZERX");
@@ -159,18 +146,13 @@ public class FairPlayBrain {
         input = input.replaceAll("9","XNINEX");
         input = input.replaceAll("0","XZEROX");
 
-        System.out.println("Input in filtruj() after changing numbers and space: " + input);
-
-//        StringBuilder result = new StringBuilder(input.toUpperCase());
-//
         StringBuilder output = new StringBuilder();
-
+        //Ošetrenie o ak po filtracií končí na X
         input = input.toUpperCase();
         for (int i = 0; i < input.length(); i++) {
             output.append(input.charAt(i));
 
             if (i < input.length()-1 && input.charAt(i) == input.charAt(i+1)) {
-//                System.out.println("Lol: "+ input.charAt(i));
                 if (input.charAt(i) == 'X') {
                     output.append('Y');
                 } else {
@@ -181,9 +163,7 @@ public class FairPlayBrain {
         }
 
         output = new StringBuilder(output.toString().toUpperCase());
-
-        System.out.println("Output after for: " + output);
-
+        //ak nepárne pridá X
         if (output.length() % 2 == 1) {
             if (output.charAt(output.length() - 1) == 'X') {
                 output.append('Y');
@@ -191,26 +171,7 @@ public class FairPlayBrain {
                 output.append('X');
             }
         }
-
-        System.out.println("Output after fixing odd: " + output);
-
-//        //Ak je neparne
-
-
-
-//        } else {
-//            if (output.charAt(output.length()-1)=='X' && output.charAt(output.length()-2) == 'X'){
-//                output.deleteCharAt(output.length()-1);
-//                output.append("Y");
-//            }
-//        }
-
-        // NERIESIT
-        // Zapisanie do globalnej premennej
-
         return output.toString().toUpperCase();
-
-
     }
 
     public String filtruj_en(String input) {
@@ -237,8 +198,6 @@ public class FairPlayBrain {
         input = input.replaceAll("ý","Y");
         input = input.replaceAll("ž","Z");
 
-        System.out.println("Input in filtruj() after normalizer: " + input);
-
         // Zmena Cislic
         input = input.replaceAll("\\p{Punct}", "");
         input = input.replaceAll(" ","XMEZERX");
@@ -253,18 +212,13 @@ public class FairPlayBrain {
         input = input.replaceAll("9","XNINEX");
         input = input.replaceAll("0","XZEROX");
 
-        System.out.println("Input in filtruj() after changing numbers and space: " + input);
-
-//        StringBuilder result = new StringBuilder(input.toUpperCase());
-//
         StringBuilder output = new StringBuilder();
-
+        //Ošetrenie o ak po filtracií končí na X
         input = input.toUpperCase();
         for (int i = 0; i < input.length(); i++) {
             output.append(input.charAt(i));
 
             if (i < input.length()-1 && input.charAt(i) == input.charAt(i+1)) {
-//                System.out.println("Lol: "+ input.charAt(i));
                 if (input.charAt(i) == 'X') {
                     output.append('Y');
                 } else {
@@ -275,9 +229,7 @@ public class FairPlayBrain {
         }
 
         output = new StringBuilder(output.toString().toUpperCase());
-
-        System.out.println("Output after for: " + output);
-
+        //ak nepárne pridá X
         if (output.length() % 2 == 1) {
             if (output.charAt(output.length() - 1) == 'X') {
                 output.append('Y');
@@ -285,28 +237,11 @@ public class FairPlayBrain {
                 output.append('X');
             }
         }
-
-        System.out.println("Output after fixing odd: " + output);
-
-//        //Ak je neparne
-
-
-
-//        } else {
-//            if (output.charAt(output.length()-1)=='X' && output.charAt(output.length()-2) == 'X'){
-//                output.deleteCharAt(output.length()-1);
-//                output.append("Y");
-//            }
-//        }
-
-        // NERIESIT
-        // Zapisanie do globalnej premennej
-
         return output.toString().toUpperCase();
 
 
     }
-
+    //pridávanie medzier pre gui na výpis po 2 prvkov
     public String pridajmedzery(String input) {
         String resultSM = "";
         String resultBezM = input;
@@ -320,7 +255,7 @@ public class FairPlayBrain {
         }
         return resultSM;
     }
-
+    //pridávanie medzier pre gui na výpis po 5 prvkov
     public String pridajmedzerypo5(String imput) {
         String resultSM = "";
         String resultBezM = imput;
@@ -334,7 +269,7 @@ public class FairPlayBrain {
         }
         return resultSM;
     }
-
+    //Šifrovanie posunom v poli
     public String sifrovanie(String imput) {
         imput = imput.replaceAll(" ", "");
         StringBuilder result = new StringBuilder();
@@ -364,6 +299,7 @@ public class FairPlayBrain {
 
         return result.toString();
     }
+    //Funkcia vráti pozíciu charakteru v poli
     private int[] getPosition(char c) {
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5; j++) {
@@ -374,6 +310,7 @@ public class FairPlayBrain {
         }
         return null;
     }
+
     public String desifrovanie(String ciphertext) {
         ciphertext = ciphertext.replaceAll(" ", "");
         StringBuilder result = new StringBuilder();
@@ -397,39 +334,20 @@ public class FairPlayBrain {
             }
         }
 
-        System.out.println("Result before prepis() " + result);
-
-
-
-        System.out.println("Result after prepis() " + result);
-
         for (int i = 0; i < result.length()-2; i++) {
             if (result.charAt(i) ==  result.charAt(i+2) && (result.charAt(i+1) == 'Y' || result.charAt(i+1) == 'X')){
                 result.deleteCharAt(i+1);
             }
         }
-
-
-
-        System.out.println("Result after idk " + result);
-
-        System.out.println(result.charAt(result.length()-1));
-        System.out.println(result.charAt(result.length()-2));
-
-
         if (result.charAt(result.length()-1) == 'Y' && result.charAt(result.length()-2) =='X'){
             result.deleteCharAt(result.length()-1);
         } else if (result.charAt(result.length()-1) =='X' && result.charAt(result.length()-2) =='Y') {
             result.deleteCharAt(result.length()-1);
         }
-
         result = new StringBuilder(prepis(result.toString()));
-
-
-
         return result.toString();
     }
-
+    //prepis medzier a čisiel pre gui
     public String prepis(String result){
         result = result.replaceAll("XMEZERX", " ");
         result = result.replaceAll("XONEX", "1");
@@ -442,8 +360,6 @@ public class FairPlayBrain {
         result = result.replaceAll("XEIGHTX", "8");
         result = result.replaceAll("XNINEX", "9");
         result = result.replaceAll("XZEROX", "0");
-        result = result.replaceAll("XKX", "");
-        result = result.replaceAll("XKONX", "X");
         return result;
     }
 
